@@ -1,2486 +1,2075 @@
+```html
 <!DOCTYPE html>
 <html lang="en-IN">
 <head>
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>SPDigitalJourney | Google Maps, Local SEO & Digital Marketing</title>
-
-  <meta name="description"
-        content="SPDigitalJourney is a government-registered MSME digital consultancy helping businesses across India with Google Business Profile optimization, Google Maps visibility, local SEO, AI search readiness, websites, Google Ads and Meta Ads.">
-
-  <meta name="keywords"
-        content="Google Business Profile consultant Bengaluru, Google Maps marketing Bengaluru, local SEO consultant Bengaluru, digital marketing consultant Bengaluru, Google Business Profile optimization, Google Maps visibility, AI search optimization, local SEO near me, Google Ads consultant Bengaluru, Meta Ads consultant Bengaluru, website design Bengaluru">
-
-  <meta name="robots" content="index, follow">
-
-  <meta name="author" content="SPDigitalJourney">
-
-  <!--
-    IMPORTANT:
-    Replace the canonical URL below with the actual SPDigitalJourney
-    website URL once the domain is finalized.
-  -->
-  <link rel="canonical" href="https://spdigitaljourney.github.io/">
-
-  <!-- Open Graph -->
-
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_IN">
-  <meta property="og:title" content="SPDigitalJourney | Google Maps, Local SEO & Digital Marketing">
-  <meta property="og:description"
-        content="Helping businesses improve Google Maps visibility, local SEO, AI search readiness, websites and digital advertising.">
-  <meta property="og:url" content="https://spdigitaljourney.github.io/">
-
-  <!-- Theme -->
-
-  <meta name="theme-color" content="#0b1220">
-
-
-  <style>
-
-    :root {
-      --navy: #0b1220;
-      --navy-2: #111b2e;
-      --blue: #246bfe;
-      --blue-dark: #1752ca;
-      --cyan: #21c7d9;
-      --gold: #f4c84a;
-      --white: #ffffff;
-      --offwhite: #f7f9fc;
-      --text: #17202a;
-      --muted: #687383;
-      --border: #e4e9f0;
-      --green: #16a05d;
-      --shadow: 0 18px 50px rgba(11,18,32,.08);
-    }
-
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-
-    body {
-      font-family:
-        Inter,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Arial,
-        sans-serif;
-
-      color: var(--text);
-      background: var(--white);
-      line-height: 1.65;
-    }
-
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-
-    .container {
-      width: min(1160px, 92%);
-      margin: auto;
-    }
-
-
-    /* =========================================
-       TOP BAR
-    ========================================= */
-
-    .topbar {
-      background: var(--navy);
-      color: #dce5f2;
-      font-size: 13px;
-      padding: 9px 0;
-    }
-
-
-    .topbar-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 15px;
-    }
-
-
-    .topbar a {
-      color: var(--white);
-      font-weight: 800;
-    }
-
-
-    /* =========================================
-       HEADER
-    ========================================= */
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 9999;
-      background: rgba(255,255,255,.96);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
-    }
-
-
-    .nav {
-      min-height: 76px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 25px;
-    }
-
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-
-    .brand-mark {
-      width: 40px;
-      height: 40px;
-      border-radius: 10px;
-      background: var(--navy);
-      color: var(--white);
-      display: grid;
-      place-items: center;
-      font-weight: 900;
-      font-size: 17px;
-    }
-
-
-    .brand-name {
-      font-size: 21px;
-      font-weight: 900;
-      letter-spacing: -.7px;
-      color: var(--navy);
-    }
-
-
-    .brand-name span {
-      color: var(--blue);
-    }
-
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 23px;
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-
-    .nav-links a:hover {
-      color: var(--blue);
-    }
-
-
-    .nav-cta {
-      background: var(--blue);
-      color: #fff !important;
-      padding: 11px 17px;
-      border-radius: 7px;
-    }
-
-
-    /* =========================================
-       HERO
-    ========================================= */
-
-    .hero {
-      position: relative;
-      overflow: hidden;
-      color: #fff;
-      background:
-        radial-gradient(circle at 80% 20%, rgba(36,107,254,.32), transparent 30%),
-        radial-gradient(circle at 15% 80%, rgba(33,199,217,.14), transparent 28%),
-        linear-gradient(135deg, #09101d, #111d32 65%, #0d1627);
-      padding: 105px 0 95px;
-    }
-
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      width: 500px;
-      height: 500px;
-      border: 1px solid rgba(255,255,255,.06);
-      border-radius: 50%;
-      right: -200px;
-      top: -200px;
-    }
-
-
-    .hero-content {
-      max-width: 870px;
-      position: relative;
-      z-index: 2;
-    }
-
-
-    .eyebrow {
-      display: inline-flex;
-      padding: 7px 13px;
-      border: 1px solid rgba(255,255,255,.18);
-      background: rgba(255,255,255,.06);
-      border-radius: 50px;
-      color: #dce9ff;
-      font-size: 12px;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 22px;
-    }
-
-
-    h1 {
-      font-size: clamp(43px, 6vw, 72px);
-      line-height: 1.03;
-      letter-spacing: -2.8px;
-      max-width: 900px;
-      margin-bottom: 25px;
-    }
-
-
-    .hero h1 span {
-      color: var(--cyan);
-    }
-
-
-    .hero-description {
-      max-width: 790px;
-      color: #d3dce8;
-      font-size: 19px;
-      line-height: 1.7;
-      margin-bottom: 32px;
-    }
-
-
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-
-    .btn {
-      min-height: 49px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 12px 20px;
-      border-radius: 7px;
-      font-size: 14px;
-      font-weight: 900;
-      transition: .2s ease;
-    }
-
-
-    .btn-primary {
-      background: var(--blue);
-      color: #fff;
-    }
-
-
-    .btn-primary:hover {
-      background: var(--blue-dark);
-      transform: translateY(-1px);
-    }
-
-
-    .btn-light {
-      background: #fff;
-      color: var(--navy);
-    }
-
-
-    .btn-outline {
-      color: #fff;
-      border: 1px solid rgba(255,255,255,.25);
-    }
-
-
-    .btn-outline:hover {
-      background: rgba(255,255,255,.08);
-    }
-
-
-    .hero-trust {
-      margin-top: 38px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px 28px;
-      color: #aebbd0;
-      font-size: 13px;
-    }
-
-
-    /* =========================================
-       STATS
-    ========================================= */
-
-    .stats {
-      background: #fff;
-      border-bottom: 1px solid var(--border);
-    }
-
-
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(4,1fr);
-    }
-
-
-    .stat {
-      padding: 30px 20px;
-      text-align: center;
-      border-right: 1px solid var(--border);
-    }
-
-
-    .stat:last-child {
-      border-right: 0;
-    }
-
-
-    .stat strong {
-      display: block;
-      font-size: 27px;
-      color: var(--navy);
-      font-weight: 900;
-    }
-
-
-    .stat span {
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-
-    /* =========================================
-       SECTIONS
-    ========================================= */
-
-    section {
-      padding: 85px 0;
-    }
-
-
-    .light {
-      background: var(--offwhite);
-    }
-
-
-    .section-heading {
-      max-width: 780px;
-      margin-bottom: 45px;
-    }
-
-
-    .label {
-      color: var(--blue);
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 1.2px;
-      font-weight: 900;
-      margin-bottom: 9px;
-    }
-
-
-    h2 {
-      font-size: clamp(32px, 4vw, 46px);
-      line-height: 1.12;
-      letter-spacing: -1.4px;
-      color: var(--navy);
-      margin-bottom: 16px;
-    }
-
-
-    .section-heading p {
-      color: var(--muted);
-      font-size: 17px;
-    }
-
-
-    /* =========================================
-       DISCOVERY FUNNEL
-    ========================================= */
-
-    .funnel {
-      display: grid;
-      grid-template-columns: repeat(6,1fr);
-      gap: 10px;
-    }
-
-
-    .funnel-item {
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 22px 13px;
-      text-align: center;
-      box-shadow: 0 7px 25px rgba(11,18,32,.04);
-    }
-
-
-    .funnel-number {
-      color: var(--blue);
-      font-size: 12px;
-      font-weight: 900;
-      margin-bottom: 7px;
-    }
-
-
-    .funnel-item strong {
-      display: block;
-      color: var(--navy);
-      font-size: 14px;
-    }
-
-
-    .funnel-item span {
-      color: var(--muted);
-      font-size: 12px;
-    }
-
-
-    /* =========================================
-       SERVICES
-    ========================================= */
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      gap: 20px;
-    }
-
-
-    .service-card {
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: 13px;
-      padding: 30px;
-      box-shadow: var(--shadow);
-      transition: .2s ease;
-    }
-
-
-    .service-card:hover {
-      transform: translateY(-4px);
-    }
-
-
-    .service-icon {
-      width: 50px;
-      height: 50px;
-      border-radius: 11px;
-      background: #edf4ff;
-      display: grid;
-      place-items: center;
-      font-size: 22px;
-      margin-bottom: 20px;
-    }
-
-
-    .service-card h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
-      color: var(--navy);
-    }
-
-
-    .service-card p {
-      color: var(--muted);
-      font-size: 14px;
-      margin-bottom: 18px;
-    }
-
-
-    .service-card ul {
-      list-style: none;
-    }
-
-
-    .service-card li {
-      font-size: 13px;
-      color: #485260;
-      margin-bottom: 8px;
-      padding-left: 19px;
-      position: relative;
-    }
-
-
-    .service-card li::before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      color: var(--green);
-      font-weight: 900;
-    }
-
-
-    /* =========================================
-       AI SEARCH
-    ========================================= */
-
-    .ai-box {
-      background:
-        linear-gradient(135deg, #0c1423, #14243c);
-      color: #fff;
-      border-radius: 18px;
-      padding: 55px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 55px;
-      box-shadow: var(--shadow);
-    }
-
-
-    .ai-box h2 {
-      color: #fff;
-    }
-
-
-    .ai-box p {
-      color: #c9d5e4;
-    }
-
-
-    .question-list {
-      display: grid;
-      gap: 11px;
-    }
-
-
-    .question {
-      padding: 14px 17px;
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.09);
-      border-radius: 7px;
-      color: #e7edf6;
-      font-size: 14px;
-    }
-
-
-    /* =========================================
-       TWO COLUMN
-    ========================================= */
-
-    .two-col {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 70px;
-      align-items: center;
-    }
-
-
-    .check-list {
-      list-style: none;
-    }
-
-
-    .check-list li {
-      position: relative;
-      padding: 15px 0 15px 31px;
-      border-bottom: 1px solid var(--border);
-      color: #46515d;
-    }
-
-
-    .check-list li::before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      color: var(--green);
-      font-weight: 900;
-    }
-
-
-    .highlight {
-      background: var(--offwhite);
-      border: 1px solid var(--border);
-      padding: 35px;
-      border-radius: 14px;
-    }
-
-
-    .highlight strong {
-      display: block;
-      color: var(--navy);
-      font-size: 23px;
-      margin-bottom: 10px;
-    }
-
-
-    .highlight p {
-      color: var(--muted);
-    }
-
-
-    /* =========================================
-       WHO WE HELP
-    ========================================= */
-
-    .audience {
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      gap: 15px;
-    }
-
-
-    .audience-item {
-      padding: 21px;
-      border: 1px solid var(--border);
-      background: #fff;
-      border-radius: 9px;
-    }
-
-
-    .audience-item strong {
-      display: block;
-      color: var(--navy);
-      margin-bottom: 5px;
-    }
-
-
-    .audience-item span {
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-
-    /* =========================================
-       LOCAL SEO
-    ========================================= */
-
-    .keyword-cloud {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 9px;
-    }
-
-
-    .keyword {
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 9px 13px;
-      font-size: 13px;
-      color: #45515e;
-    }
-
-
-    /* =========================================
-       LOCATION
-    ========================================= */
-
-    .location-card {
-      background: var(--navy);
-      color: #fff;
-      border-radius: 16px;
-      padding: 45px;
-    }
-
-
-    .location-card h2 {
-      color: #fff;
-    }
-
-
-    .location-card p {
-      color: #cbd5e2;
-      margin-bottom: 12px;
-    }
-
-
-    .location-address {
-      margin: 25px 0;
-      font-size: 16px;
-      color: #e5ebf3;
-    }
-
-
-    /* =========================================
-       FAQ
-    ========================================= */
-
-    .faq {
-      max-width: 900px;
-      margin: auto;
-    }
-
-
-    details {
-      border-bottom: 1px solid var(--border);
-      padding: 21px 0;
-    }
-
-
-    summary {
-      cursor: pointer;
-      font-weight: 800;
-      color: var(--navy);
-      font-size: 16px;
-    }
-
-
-    details p {
-      color: var(--muted);
-      padding-top: 12px;
-      max-width: 800px;
-    }
-
-
-    /* =========================================
-       CTA
-    ========================================= */
-
-    .final-cta {
-      background:
-        radial-gradient(circle at 85% 15%, rgba(36,107,254,.25), transparent 25%),
-        var(--navy);
-      color: #fff;
-      text-align: center;
-      padding: 90px 0;
-    }
-
-
-    .final-cta h2 {
-      color: #fff;
-      max-width: 780px;
-      margin: 0 auto 18px;
-    }
-
-
-    .final-cta p {
-      max-width: 650px;
-      margin: 0 auto 30px;
-      color: #cbd6e5;
-      font-size: 17px;
-    }
-
-
-    .final-buttons {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-
-    /* =========================================
-       FOOTER
-    ========================================= */
-
-    footer {
-      background: #070d17;
-      color: #fff;
-      padding: 55px 0 100px;
-    }
-
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 1.5fr 1fr 1fr;
-      gap: 50px;
-    }
-
-
-    footer h3 {
-      margin-bottom: 14px;
-    }
-
-
-    footer p,
-    footer li {
-      color: #aeb9c8;
-      font-size: 14px;
-    }
-
-
-    footer ul {
-      list-style: none;
-    }
-
-
-    footer li {
-      margin-bottom: 8px;
-    }
-
-
-    .footer-bottom {
-      margin-top: 35px;
-      padding-top: 20px;
-      border-top: 1px solid rgba(255,255,255,.08);
-      color: #7f8b9b;
-      font-size: 12px;
-    }
-
-
-    /* =========================================
-       MOBILE CTA
-    ========================================= */
-
-    .mobile-cta {
-      display: none;
-    }
-
-
-    /* =========================================
-       RESPONSIVE
-    ========================================= */
-
-    @media (max-width: 950px) {
-
-      .nav-links {
-        display: none;
-      }
-
-      .funnel {
-        grid-template-columns: repeat(3,1fr);
-      }
-
-      .services {
-        grid-template-columns: repeat(2,1fr);
-      }
-
-      .audience {
-        grid-template-columns: repeat(2,1fr);
-      }
-
-      .ai-box {
-        grid-template-columns: 1fr;
-      }
-
-      .two-col {
-        grid-template-columns: 1fr;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-    }
-
-
-    @media (max-width: 650px) {
-
-      .topbar {
-        display: none;
-      }
-
-      .nav {
-        min-height: 66px;
-      }
-
-      .brand-name {
-        font-size: 18px;
-      }
-
-      .brand-mark {
-        width: 35px;
-        height: 35px;
-      }
-
-      .hero {
-        padding: 70px 0 65px;
-      }
-
-      h1 {
-        font-size: 43px;
-        letter-spacing: -1.8px;
-      }
-
-      .hero-description {
-        font-size: 17px;
-      }
-
-      section {
-        padding: 65px 0;
-      }
-
-      .stats-grid {
-        grid-template-columns: repeat(2,1fr);
-      }
-
-      .stat:nth-child(2) {
-        border-right: 0;
-      }
-
-      .stat:nth-child(-n+2) {
-        border-bottom: 1px solid var(--border);
-      }
-
-      .funnel {
-        grid-template-columns: repeat(2,1fr);
-      }
-
-      .services,
-      .audience {
-        grid-template-columns: 1fr;
-      }
-
-      .ai-box,
-      .location-card {
-        padding: 30px 24px;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .mobile-cta {
-        display: flex;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 99999;
-        background: #fff;
-        padding: 8px;
-        gap: 7px;
-        box-shadow: 0 -5px 25px rgba(0,0,0,.15);
-      }
-
-      .mobile-cta a {
-        flex: 1;
-        padding: 12px 6px;
-        border-radius: 6px;
-        text-align: center;
-        font-size: 12px;
-        font-weight: 900;
-      }
-
-      .mobile-call {
-        background: var(--navy);
-        color: #fff;
-      }
-
-      .mobile-whatsapp {
-        background: var(--green);
-        color: #fff;
-      }
-
-      .mobile-demo {
-        background: var(--blue);
-        color: #fff;
-      }
-
-      footer {
-        padding-bottom: 90px;
-      }
-
-    }
-
-  </style>
-
-
-  <!-- =========================================================
-       ORGANIZATION / LOCAL BUSINESS SCHEMA
-
-       Replace the canonical URL and sameAs URLs when the
-       official SPDigitalJourney website/social URLs are finalized.
-  ========================================================== -->
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "@id": "https://spdigitaljourney.github.io/#business",
-    "name": "SPDigitalJourney",
-    "description": "Government-registered MSME digital consultancy specializing in Google Business Profile optimization, Google Maps visibility, local SEO, AI search readiness, responsive web design, Google Ads and Meta Ads.",
-    "url": "https://spdigitaljourney.github.io/",
-    "telephone": "+91-7799423794",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Achit Nagar, Soladevanahalli",
-      "addressLocality": "Bengaluru",
-      "addressRegion": "Karnataka",
-      "postalCode": "560107",
-      "addressCountry": "IN"
-    },
-    "areaServed": [
-      {
-        "@type": "City",
-        "name": "Bengaluru"
-      },
-      {
-        "@type": "State",
-        "name": "Karnataka"
-      },
-      {
-        "@type": "Country",
-        "name": "India"
-      }
-    ],
-    "knowsAbout": [
-      "Google Business Profile",
-      "Google Maps",
-      "Local SEO",
-      "AI Search",
-      "Search Engine Optimization",
-      "Responsive Web Design",
-      "Google Ads",
-      "Meta Ads",
-      "Digital Marketing"
-    ],
-    "sameAs": [
-      "https://g.page/r/CdRrLmhaPARzEBM/review"
-    ]
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SPDigitalJourney | Google Maps, Local SEO, AI Search & Digital Marketing</title>
+
+<meta name="description" content="SPDigitalJourney helps businesses improve Google Business Profile visibility, Google Maps presence, local SEO, AI search readiness, websites, Google Ads and Meta Ads. Serving businesses across India.">
+<meta name="keywords" content="Google Business Profile, Google Maps, Local SEO, AI Search, Ask Maps, digital marketing, Google Ads, Meta Ads, website design, Bengaluru">
+<meta name="author" content="Sanjay Paul - SPDigitalJourney">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://spdigitaljourney.github.io/">
+
+<meta property="og:title" content="SPDigitalJourney | Get Found. Get Trusted. Get Chosen.">
+<meta property="og:description" content="Google Maps, Local SEO, AI Search and Digital Growth solutions for businesses across India.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://spdigitaljourney.github.io/">
+
+<meta name="theme-color" content="#071426">
+
+<style>
+:root{
+  --navy:#071426;
+  --navy2:#0b1d35;
+  --blue:#1683ff;
+  --cyan:#24d6ff;
+  --white:#ffffff;
+  --muted:#a9b7ca;
+  --text:#eaf1f8;
+  --card:#0d2039;
+  --border:rgba(255,255,255,.10);
+  --green:#19c463;
+  --shadow:0 20px 60px rgba(0,0,0,.28);
+  --radius:22px;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:var(--navy);
+  color:var(--text);
+  line-height:1.6;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+.container{
+  width:min(1160px,92%);
+  margin:auto;
+}
+
+section{
+  padding:90px 0;
+}
+
+.small-label{
+  color:var(--cyan);
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:12px;
+  font-weight:800;
+  margin-bottom:14px;
+}
+
+h1,h2,h3{
+  line-height:1.15;
+}
+
+h1{
+  font-size:clamp(42px,7vw,76px);
+  letter-spacing:-3px;
+}
+
+h2{
+  font-size:clamp(32px,5vw,52px);
+  letter-spacing:-2px;
+}
+
+h3{
+  font-size:22px;
+}
+
+p{
+  color:var(--muted);
+}
+
+.topbar{
+  background:#04101f;
+  border-bottom:1px solid var(--border);
+  font-size:13px;
+  padding:9px 0;
+}
+
+.topbar-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+}
+
+.topbar a{
+  color:#fff;
+  font-weight:700;
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(7,20,38,.92);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--border);
+}
+
+.nav{
+  min-height:74px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:900;
+  font-size:21px;
+}
+
+.logo-mark{
+  width:42px;
+  height:42px;
+  border-radius:12px;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(135deg,var(--blue),var(--cyan));
+  color:#fff;
+  box-shadow:0 8px 30px rgba(22,131,255,.3);
+}
+
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:24px;
+  font-size:14px;
+  color:#c8d4e3;
+}
+
+.nav-links a:hover{
+  color:#fff;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  min-height:48px;
+  padding:0 20px;
+  border-radius:12px;
+  font-weight:800;
+  border:1px solid var(--border);
+  transition:.2s ease;
+  cursor:pointer;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+.btn-primary{
+  background:linear-gradient(135deg,var(--blue),var(--cyan));
+  color:#fff;
+  border:0;
+}
+
+.btn-dark{
+  background:#0d2039;
+  color:#fff;
+}
+
+.btn-green{
+  background:var(--green);
+  color:#fff;
+  border:0;
+}
+
+.hero{
+  position:relative;
+  overflow:hidden;
+  padding:110px 0 80px;
+  background:
+    radial-gradient(circle at 80% 20%,rgba(36,214,255,.14),transparent 30%),
+    radial-gradient(circle at 10% 30%,rgba(22,131,255,.15),transparent 30%);
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:60px;
+  align-items:center;
+}
+
+.hero p{
+  max-width:700px;
+  font-size:18px;
+  margin:25px 0;
+}
+
+.hero-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:25px;
+}
+
+.hero-note{
+  margin-top:22px;
+  font-size:13px;
+}
+
+.hero-card{
+  background:linear-gradient(145deg,#102945,#08182c);
+  border:1px solid var(--border);
+  border-radius:28px;
+  padding:30px;
+  box-shadow:var(--shadow);
+}
+
+.hero-card h3{
+  margin-bottom:20px;
+}
+
+.signal{
+  display:flex;
+  gap:14px;
+  padding:16px 0;
+  border-bottom:1px solid var(--border);
+}
+
+.signal:last-child{
+  border-bottom:0;
+}
+
+.signal-icon{
+  width:42px;
+  height:42px;
+  display:grid;
+  place-items:center;
+  border-radius:12px;
+  background:rgba(36,214,255,.1);
+  flex-shrink:0;
+}
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  border:1px solid var(--border);
+  border-radius:22px;
+  overflow:hidden;
+  background:rgba(255,255,255,.025);
+}
+
+.stat{
+  padding:25px;
+  text-align:center;
+  border-right:1px solid var(--border);
+}
+
+.stat:last-child{
+  border-right:0;
+}
+
+.stat strong{
+  display:block;
+  font-size:28px;
+  color:#fff;
+}
+
+.stat span{
+  color:var(--muted);
+  font-size:13px;
+}
+
+.section-head{
+  max-width:760px;
+  margin-bottom:45px;
+}
+
+.section-head p{
+  margin-top:15px;
+}
+
+.funnel{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  gap:10px;
+}
+
+.funnel-item{
+  padding:22px 15px;
+  text-align:center;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:18px;
+}
+
+.funnel-item strong{
+  display:block;
+  margin-bottom:6px;
+  color:#fff;
+}
+
+.funnel-item span{
+  color:var(--muted);
+  font-size:12px;
+}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.service{
+  background:var(--card);
+  border:1px solid var(--border);
+  padding:28px;
+  border-radius:var(--radius);
+  transition:.25s;
+}
+
+.service:hover{
+  transform:translateY(-5px);
+  border-color:rgba(36,214,255,.35);
+}
+
+.service-icon{
+  font-size:30px;
+  margin-bottom:18px;
+}
+
+.service p{
+  margin-top:10px;
+  font-size:14px;
+}
+
+.service a{
+  display:inline-block;
+  margin-top:18px;
+  color:var(--cyan);
+  font-size:13px;
+  font-weight:800;
+}
+
+.ai-section{
+  background:
+    linear-gradient(180deg,#081a31,#071426);
+}
+
+.ai-box{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+.ai-panel{
+  padding:32px;
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:24px;
+}
+
+.question{
+  padding:14px 16px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  margin-top:10px;
+  color:#dce8f5;
+  background:rgba(255,255,255,.025);
+}
+
+.trust-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.trust-card{
+  background:var(--card);
+  border:1px solid var(--border);
+  padding:28px;
+  border-radius:22px;
+}
+
+.trust-card p{
+  margin-top:10px;
+  font-size:14px;
+}
+
+.keyword-box{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.keyword{
+  padding:9px 13px;
+  border:1px solid var(--border);
+  border-radius:100px;
+  background:#0b1d35;
+  color:#cbd8e8;
+  font-size:13px;
+}
+
+.review-section{
+  background:linear-gradient(135deg,#0a2039,#071426);
+}
+
+.review-box{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+  align-items:stretch;
+}
+
+.review-card{
+  padding:35px;
+  border-radius:25px;
+  border:1px solid var(--border);
+  background:rgba(255,255,255,.035);
+}
+
+.review-card p{
+  margin:12px 0 25px;
+}
+
+.lead-section{
+  background:#06111f;
+}
+
+.lead-grid{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:30px;
+}
+
+.lead-copy{
+  padding:25px 0;
+}
+
+.lead-copy ul{
+  list-style:none;
+  margin-top:25px;
+}
+
+.lead-copy li{
+  margin:13px 0;
+  color:#c9d6e5;
+}
+
+.lead-copy li::before{
+  content:"✓";
+  color:var(--cyan);
+  font-weight:900;
+  margin-right:10px;
+}
+
+.lead-form{
+  background:var(--card);
+  border:1px solid var(--border);
+  padding:30px;
+  border-radius:25px;
+}
+
+.form-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+
+.field{
+  margin-bottom:14px;
+}
+
+.field label{
+  display:block;
+  font-size:12px;
+  color:#b9c8d9;
+  margin-bottom:7px;
+  font-weight:700;
+}
+
+.field input,
+.field select,
+.field textarea{
+  width:100%;
+  padding:14px;
+  border-radius:11px;
+  border:1px solid var(--border);
+  background:#071426;
+  color:#fff;
+  outline:none;
+  font:inherit;
+}
+
+.field textarea{
+  min-height:100px;
+  resize:vertical;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus{
+  border-color:var(--cyan);
+}
+
+.form-note{
+  font-size:12px;
+  margin-top:10px;
+}
+
+.faq{
+  max-width:850px;
+}
+
+details{
+  border-bottom:1px solid var(--border);
+  padding:20px 0;
+}
+
+summary{
+  cursor:pointer;
+  font-weight:800;
+  color:#fff;
+}
+
+details p{
+  padding-top:12px;
+  font-size:14px;
+}
+
+.final-cta{
+  text-align:center;
+  background:
+    radial-gradient(circle at 50% 0%,rgba(36,214,255,.16),transparent 40%);
+}
+
+.final-cta p{
+  max-width:650px;
+  margin:15px auto 25px;
+}
+
+footer{
+  border-top:1px solid var(--border);
+  padding:50px 0 100px;
+  background:#040e1a;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.2fr 1fr 1fr;
+  gap:35px;
+}
+
+footer h3{
+  margin-bottom:14px;
+}
+
+footer p,
+footer li{
+  font-size:13px;
+}
+
+footer ul{
+  list-style:none;
+}
+
+footer li{
+  margin:9px 0;
+}
+
+.footer-bottom{
+  border-top:1px solid var(--border);
+  margin-top:35px;
+  padding-top:20px;
+  font-size:12px;
+  color:#77879a;
+}
+
+/* WhatsApp floating button */
+.whatsapp-float{
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  z-index:1500;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:13px 18px;
+  border-radius:100px;
+  background:var(--green);
+  color:#fff;
+  font-weight:900;
+  box-shadow:0 12px 35px rgba(0,0,0,.35);
+}
+
+.whatsapp-float span{
+  font-size:14px;
+}
+
+/* AI BOT */
+.bot-button{
+  position:fixed;
+  right:22px;
+  bottom:88px;
+  z-index:1501;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  border:0;
+  background:linear-gradient(135deg,var(--blue),var(--cyan));
+  color:#fff;
+  font-size:25px;
+  cursor:pointer;
+  box-shadow:0 12px 35px rgba(0,0,0,.35);
+}
+
+.bot-window{
+  position:fixed;
+  right:22px;
+  bottom:155px;
+  width:360px;
+  max-width:calc(100vw - 30px);
+  height:540px;
+  background:#081a30;
+  border:1px solid var(--border);
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 25px 80px rgba(0,0,0,.5);
+  z-index:1600;
+  display:none;
+  flex-direction:column;
+}
+
+.bot-window.open{
+  display:flex;
+}
+
+.bot-header{
+  padding:18px;
+  background:linear-gradient(135deg,#0e2d50,#0a1c33);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.bot-header strong{
+  display:block;
+}
+
+.bot-header small{
+  color:#91a5bb;
+}
+
+.bot-close{
+  border:0;
+  background:transparent;
+  color:#fff;
+  font-size:22px;
+  cursor:pointer;
+}
+
+.bot-messages{
+  flex:1;
+  overflow-y:auto;
+  padding:16px;
+}
+
+.bot-message{
+  max-width:88%;
+  padding:12px 14px;
+  border-radius:14px;
+  margin-bottom:10px;
+  font-size:13px;
+}
+
+.bot-message.ai{
+  background:#102945;
+  color:#dce8f5;
+  border-bottom-left-radius:4px;
+}
+
+.bot-message.user{
+  background:linear-gradient(135deg,var(--blue),#1766d1);
+  color:#fff;
+  margin-left:auto;
+  border-bottom-right-radius:4px;
+}
+
+.bot-options{
+  padding:12px;
+  border-top:1px solid var(--border);
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+}
+
+.bot-option{
+  border:1px solid rgba(36,214,255,.35);
+  background:#0c223b;
+  color:#dce8f5;
+  border-radius:100px;
+  padding:8px 11px;
+  font-size:12px;
+  cursor:pointer;
+}
+
+.bot-option:hover{
+  background:#12304f;
+}
+
+.bot-input{
+  display:flex;
+  gap:7px;
+  padding:12px;
+  border-top:1px solid var(--border);
+}
+
+.bot-input input{
+  flex:1;
+  min-width:0;
+  background:#061426;
+  border:1px solid var(--border);
+  border-radius:10px;
+  color:#fff;
+  padding:11px;
+  outline:none;
+}
+
+.bot-send{
+  width:45px;
+  border:0;
+  border-radius:10px;
+  background:var(--blue);
+  color:#fff;
+  cursor:pointer;
+}
+
+/* mobile sticky */
+.mobile-bar{
+  display:none;
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:1400;
+  background:#06111f;
+  border-top:1px solid var(--border);
+  padding:9px;
+  grid-template-columns:repeat(3,1fr);
+  gap:7px;
+}
+
+.mobile-bar a{
+  text-align:center;
+  padding:11px 5px;
+  border-radius:9px;
+  background:#0d2039;
+  font-size:11px;
+  font-weight:800;
+}
+
+.mobile-bar a:nth-child(2){
+  background:var(--green);
+}
+
+.mobile-bar a:nth-child(3){
+  background:linear-gradient(135deg,var(--blue),var(--cyan));
+}
+
+@media(max-width:900px){
+  .hero-grid,
+  .ai-box,
+  .lead-grid,
+  .review-box{
+    grid-template-columns:1fr;
   }
-  </script>
 
-
-  <!-- =========================================================
-       FAQ SCHEMA
-  ========================================================== -->
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-
-      {
-        "@type": "Question",
-        "name": "What does SPDigitalJourney do?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "SPDigitalJourney is a government-registered MSME digital consultancy specializing in Google Business Profile optimization, Google Maps visibility, local SEO, AI search readiness, responsive websites, Google Ads and Meta Ads."
-        }
-      },
-
-      {
-        "@type": "Question",
-        "name": "Can SPDigitalJourney help improve Google Maps visibility?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "SPDigitalJourney provides Google Business Profile and local SEO strategies designed to improve business information, relevance and visibility for appropriate local searches. No legitimate consultant can guarantee a specific Google Maps ranking."
-        }
-      },
-
-      {
-        "@type": "Question",
-        "name": "What is Google Business Profile optimization?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Google Business Profile optimization involves improving and maintaining relevant business information on Google Search and Google Maps, including categories, services, products, business information, posts and review guidance."
-        }
-      },
-
-      {
-        "@type": "Question",
-        "name": "What is local SEO?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Local SEO is the process of improving a business's visibility when customers search for relevant products or services in a specific geographic area."
-        }
-      },
-
-      {
-        "@type": "Question",
-        "name": "Can SPDigitalJourney guarantee AI search rankings?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No agency can guarantee placement in AI search results. SPDigitalJourney helps businesses create useful, structured and locally relevant content that makes business information easier for search engines and AI systems to understand."
-        }
-      },
-
-      {
-        "@type": "Question",
-        "name": "Does SPDigitalJourney build websites?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. SPDigitalJourney creates responsive websites designed around mobile users, search visibility, local SEO, AI search readiness and lead generation."
-        }
-      },
-
-      {
-        "@type": "Question",
-        "name": "Does SPDigitalJourney provide Google Ads management?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. SPDigitalJourney can help businesses plan, launch and optimize Google advertising campaigns according to their goals and target locations."
-        }
-      },
-
-      {
-        "@type": "Question",
-        "name": "Does SPDigitalJourney provide Meta Ads?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. SPDigitalJourney provides strategy and campaign support for Facebook and Instagram advertising, including lead-generation and WhatsApp-focused campaigns."
-        }
-      },
-
-      {
-        "@type": "Question",
-        "name": "Where does SPDigitalJourney operate?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "SPDigitalJourney is based in Bengaluru, Karnataka and supports businesses across India through online consultations, digital strategy, website projects, Google Business Profile support and local SEO."
-        }
-      },
-
-      {
-        "@type": "Question",
-        "name": "How can I contact SPDigitalJourney?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "You can contact SPDigitalJourney by calling or WhatsApping 7799423794."
-        }
-      }
-
-    ]
+  .services{
+    grid-template-columns:repeat(2,1fr);
   }
-  </script>
 
+  .trust-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .funnel{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .nav-links{
+    display:none;
+  }
+}
+
+@media(max-width:650px){
+  section{
+    padding:65px 0;
+  }
+
+  .hero{
+    padding:75px 0 55px;
+  }
+
+  h1{
+    letter-spacing:-2px;
+  }
+
+  .stats{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .stat:nth-child(2){
+    border-right:0;
+  }
+
+  .stat:nth-child(-n+2){
+    border-bottom:1px solid var(--border);
+  }
+
+  .services,
+  .trust-grid,
+  .review-box,
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .funnel{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .form-row{
+    grid-template-columns:1fr;
+  }
+
+  .whatsapp-float{
+    display:none;
+  }
+
+  .bot-button{
+    right:16px;
+    bottom:75px;
+  }
+
+  .bot-window{
+    right:15px;
+    bottom:145px;
+    width:calc(100vw - 30px);
+    height:520px;
+  }
+
+  .mobile-bar{
+    display:grid;
+  }
+
+  footer{
+    padding-bottom:100px;
+  }
+}
+</style>
 </head>
-
 
 <body>
 
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span>Government-Registered MSME Digital Consultancy</span>
+    <a href="tel:+917799423794">Call 7799423794</a>
+  </div>
+</div>
 
-  <!-- TOP BAR -->
+<!-- HEADER -->
+<header>
+  <div class="container nav">
 
-  <div class="topbar">
+    <a href="#" class="logo">
+      <span class="logo-mark">SP</span>
+      <span>SPDigitalJourney</span>
+    </a>
 
-    <div class="container topbar-inner">
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#ai-search">AI Search</a>
+      <a href="#local-seo">Local SEO</a>
+      <a href="#trust">Why Us</a>
+      <a href="#faq">FAQ</a>
+      <a href="#lead">Get Started</a>
+    </nav>
 
-      <span>
-        Government-Registered MSME Digital Consultancy
-      </span>
+    <a class="btn btn-primary" href="#lead">Book a Demo</a>
 
-      <a href="tel:+917799423794">
-        📞 7799423794
-      </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-grid">
+
+    <div>
+      <div class="small-label">Google Maps • Local SEO • AI Search • Digital Growth</div>
+
+      <h1>Get Found.<br>Get Trusted.<br>Get Chosen.</h1>
+
+      <p>
+        SPDigitalJourney helps businesses build stronger visibility across
+        Google Search, Google Maps and emerging AI-powered discovery —
+        turning online visibility into real customer enquiries.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="btn btn-primary" href="#lead">🚀 Get My Free Visibility Check</a>
+
+        <a class="btn btn-green"
+           href="https://wa.me/917799423794?text=Hi%20SPDigitalJourney%2C%20I%20would%20like%20a%20free%20Google%20Maps%20%26%20digital%20visibility%20check."
+           target="_blank"
+           rel="noopener">
+          💬 WhatsApp Us
+        </a>
+
+        <a class="btn btn-dark"
+           href="https://g.page/r/CdRrLmhaPARzEBM/review"
+           target="_blank"
+           rel="noopener">
+          ⭐ Review Us
+        </a>
+      </div>
+
+      <p class="hero-note">
+        No guaranteed rankings. No shortcuts. Just practical, compliant
+        digital visibility strategies designed around your business.
+      </p>
+    </div>
+
+    <div class="hero-card">
+
+      <h3>Your Digital Visibility Journey</h3>
+
+      <div class="signal">
+        <div class="signal-icon">🔎</div>
+        <div>
+          <strong>Get Discovered</strong>
+          <p>Google Search, Maps, Local SEO & AI discovery.</p>
+        </div>
+      </div>
+
+      <div class="signal">
+        <div class="signal-icon">📍</div>
+        <div>
+          <strong>Get Found Locally</strong>
+          <p>Build stronger location and service relevance.</p>
+        </div>
+      </div>
+
+      <div class="signal">
+        <div class="signal-icon">⭐</div>
+        <div>
+          <strong>Build Trust</strong>
+          <p>Reviews, content, profiles and digital credibility.</p>
+        </div>
+      </div>
+
+      <div class="signal">
+        <div class="signal-icon">💬</div>
+        <div>
+          <strong>Generate Enquiries</strong>
+          <p>Turn visitors into calls, WhatsApp conversations and leads.</p>
+        </div>
+      </div>
 
     </div>
 
   </div>
+</section>
 
+<!-- STATS -->
+<section style="padding-top:20px;padding-bottom:35px;">
+  <div class="container">
 
-  <!-- HEADER -->
+    <div class="stats">
+      <div class="stat">
+        <strong>15+</strong>
+        <span>Years Experience</span>
+      </div>
 
-  <header>
+      <div class="stat">
+        <strong>5000+</strong>
+        <span>Business Owners Guided</span>
+      </div>
 
-    <div class="container nav">
+      <div class="stat">
+        <strong>2000+</strong>
+        <span>Street View Projects</span>
+      </div>
 
-      <a href="#" class="brand">
+      <div class="stat">
+        <strong>India</strong>
+        <span>Businesses We Serve</span>
+      </div>
+    </div>
 
-        <div class="brand-mark">
-          SP
-        </div>
+  </div>
+</section>
 
-        <div class="brand-name">
-          SP<span>DigitalJourney</span>
-        </div>
+<!-- FUNNEL -->
+<section id="local-seo">
+  <div class="container">
 
-      </a>
+    <div class="section-head">
+      <div class="small-label">The SPDigitalJourney Funnel</div>
+      <h2>From Search to Customer.</h2>
+      <p>
+        Your digital presence should not stop at being visible.
+        It should help the right customer discover you, trust you,
+        contact you and take action.
+      </p>
+    </div>
 
+    <div class="funnel">
+      <div class="funnel-item">
+        <strong>01 Discover</strong>
+        <span>Search & AI visibility</span>
+      </div>
 
-      <nav class="nav-links">
+      <div class="funnel-item">
+        <strong>02 Find</strong>
+        <span>Maps & local relevance</span>
+      </div>
 
-        <a href="#services">
-          Services
+      <div class="funnel-item">
+        <strong>03 Trust</strong>
+        <span>Reviews & credibility</span>
+      </div>
+
+      <div class="funnel-item">
+        <strong>04 Engage</strong>
+        <span>Website & content</span>
+      </div>
+
+      <div class="funnel-item">
+        <strong>05 Convert</strong>
+        <span>Calls & WhatsApp</span>
+      </div>
+
+      <div class="funnel-item">
+        <strong>06 Grow</strong>
+        <span>Ads & optimisation</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+
+    <div class="section-head">
+      <div class="small-label">What We Do</div>
+      <h2>One Digital Journey.<br>Multiple Growth Channels.</h2>
+      <p>
+        Practical digital marketing support for local businesses,
+        professionals, hospitality, healthcare, education, retail
+        and service businesses.
+      </p>
+    </div>
+
+    <div class="services">
+
+      <div class="service">
+        <div class="service-icon">📍</div>
+        <h3>Google Business Profile</h3>
+        <p>
+          Profile setup, optimisation, categories, services,
+          posts, reviews, business information and ongoing improvements.
+        </p>
+        <a href="#lead" data-interest="Google Business Profile">
+          Get a Profile Check →
         </a>
+      </div>
 
-        <a href="#ai-search">
-          AI Search
+      <div class="service">
+        <div class="service-icon">🗺️</div>
+        <h3>Google Maps & Local SEO</h3>
+        <p>
+          Improve local relevance, location signals, service visibility
+          and customer discovery across Google Maps and Search.
+        </p>
+        <a href="#lead" data-interest="Google Maps & Local SEO">
+          Check My Visibility →
         </a>
+      </div>
 
-        <a href="#local-seo">
-          Local SEO
+      <div class="service">
+        <div class="service-icon">🤖</div>
+        <h3>AI Search Readiness</h3>
+        <p>
+          Prepare your business information and content for
+          conversational search, AI discovery and question-based queries.
+        </p>
+        <a href="#lead" data-interest="AI Search Readiness">
+          Ask About AI Search →
         </a>
+      </div>
 
-        <a href="#about">
-          Why Us
+      <div class="service">
+        <div class="service-icon">💻</div>
+        <h3>Responsive Websites</h3>
+        <p>
+          Fast, mobile-friendly websites designed around trust,
+          SEO, lead generation and clear customer actions.
+        </p>
+        <a href="#lead" data-interest="Website Design">
+          Build My Website →
         </a>
+      </div>
 
-        <a href="#faq">
-          FAQ
+      <div class="service">
+        <div class="service-icon">🎯</div>
+        <h3>Google Ads</h3>
+        <p>
+          Search and performance advertising strategies designed to
+          connect your business with high-intent customers.
+        </p>
+        <a href="#lead" data-interest="Google Ads">
+          Discuss Google Ads →
         </a>
+      </div>
 
-        <a class="nav-cta"
-           href="#demo">
-          Book a Demo
+      <div class="service">
+        <div class="service-icon">📱</div>
+        <h3>Meta Ads</h3>
+        <p>
+          Facebook and Instagram campaigns focused on awareness,
+          enquiries, WhatsApp conversations and customer acquisition.
+        </p>
+        <a href="#lead" data-interest="Meta Ads">
+          Discuss Meta Ads →
         </a>
-
-      </nav>
+      </div>
 
     </div>
 
-  </header>
+  </div>
+</section>
 
+<!-- AI SEARCH -->
+<section class="ai-section" id="ai-search">
+  <div class="container">
 
-  <!-- HERO -->
+    <div class="section-head">
+      <div class="small-label">AI Search Readiness</div>
+      <h2>Be Ready for the Way People Search Next.</h2>
+      <p>
+        Customers increasingly search using complete questions instead of
+        short keywords. Your business information needs to clearly answer
+        those questions.
+      </p>
+    </div>
 
-  <main>
+    <div class="ai-box">
 
-    <section class="hero">
+      <div class="ai-panel">
+        <h3>Customers may ask:</h3>
 
-      <div class="container">
-
-        <div class="hero-content">
-
-          <div class="eyebrow">
-            Google Maps • Local SEO • AI Search • Digital Growth
-          </div>
-
-
-          <h1>
-            Get Found.
-            <span>Get Trusted.</span>
-            Get Chosen.
-          </h1>
-
-
-          <p class="hero-description">
-
-            SPDigitalJourney helps businesses build stronger
-            digital visibility through <strong>Google Business
-            Profile optimization, Google Maps visibility,
-            local SEO, AI search readiness, responsive websites,
-            Google Ads and Meta Ads.</strong>
-
-          </p>
-
-
-          <div class="hero-buttons">
-
-            <a class="btn btn-primary"
-               href="#demo">
-              🚀 BOOK A DEMO
-            </a>
-
-            <a class="btn btn-light"
-               href="tel:+917799423794">
-              📞 CALL NOW
-            </a>
-
-            <a class="btn btn-outline"
-               href="https://wa.me/917799423794?text=Hi%20SPDigitalJourney%2C%20I%20would%20like%20to%20discuss%20my%20business."
-               target="_blank"
-               rel="noopener">
-              💬 WHATSAPP
-            </a>
-
-          </div>
-
-
-          <div class="hero-trust">
-
-            <span>
-              ✓ Government-Registered MSME
-            </span>
-
-            <span>
-              ✓ Bengaluru Based
-            </span>
-
-            <span>
-              ✓ Serving Businesses Across India
-            </span>
-
-            <span>
-              ✓ Human + AI Approach
-            </span>
-
-          </div>
-
+        <div class="question">
+          “Which marketing consultant can help my business improve Google Maps visibility?”
         </div>
 
+        <div class="question">
+          “Who can optimise my Google Business Profile in Bengaluru?”
+        </div>
+
+        <div class="question">
+          “How can I get more local customers from Google?”
+        </div>
+
+        <div class="question">
+          “Who can help my business prepare for AI search?”
+        </div>
       </div>
 
-    </section>
-
-
-    <!-- STATS -->
-
-    <section class="stats">
-
-      <div class="container stats-grid">
-
-        <div class="stat">
-          <strong>Google</strong>
-          <span>Business Ecosystem Focus</span>
-        </div>
-
-        <div class="stat">
-          <strong>Local</strong>
-          <span>Search Visibility</span>
-        </div>
-
-        <div class="stat">
-          <strong>AI</strong>
-          <span>Search Readiness</span>
-        </div>
-
-        <div class="stat">
-          <strong>India</strong>
-          <span>Service Coverage</span>
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- INTRO -->
-
-    <section>
-
-      <div class="container two-col">
-
-        <div>
-
-          <div class="label">
-            The Digital Discovery Journey
-          </div>
-
-          <h2>
-            Your Customers Are Searching.
-            Can They Find You?
-          </h2>
-
-          <p style="color:var(--muted);font-size:17px;">
-
-            Modern customers discover businesses through Google
-            Search, Google Maps, "near me" searches, social media,
-            websites and increasingly AI-powered search experiences.
-
-          </p>
-
-          <br>
-
-          <p style="color:var(--muted);">
-
-            SPDigitalJourney connects these channels into one
-            practical visibility and lead-generation strategy.
-
-          </p>
-
-        </div>
-
-
-        <div class="highlight">
-
-          <strong>
-            Visibility is not just about rankings.
-          </strong>
-
-          <p>
-
-            The real goal is to help the right customer discover
-            your business, understand what you offer, trust your
-            digital presence and take the next step.
-
-          </p>
-
-          <br>
-
-          <a class="btn btn-primary"
-             href="#demo">
-            Analyse My Business
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- FUNNEL -->
-
-    <section class="light">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <div class="label">
-            Our Visibility Funnel
-          </div>
-
-          <h2>
-            From Search to Customer
-          </h2>
-
-          <p>
-            We build your digital journey around how customers
-            actually discover and choose businesses.
-          </p>
-
-        </div>
-
-
-        <div class="funnel">
-
-          <div class="funnel-item">
-            <div class="funnel-number">01</div>
-            <strong>DISCOVER</strong>
-            <span>Google / Maps / AI</span>
-          </div>
-
-          <div class="funnel-item">
-            <div class="funnel-number">02</div>
-            <strong>FIND</strong>
-            <span>Search visibility</span>
-          </div>
-
-          <div class="funnel-item">
-            <div class="funnel-number">03</div>
-            <strong>TRUST</strong>
-            <span>Profile / Reviews</span>
-          </div>
-
-          <div class="funnel-item">
-            <div class="funnel-number">04</div>
-            <strong>ENGAGE</strong>
-            <span>Website / Call</span>
-          </div>
-
-          <div class="funnel-item">
-            <div class="funnel-number">05</div>
-            <strong>CONVERT</strong>
-            <span>Lead / Customer</span>
-          </div>
-
-          <div class="funnel-item">
-            <div class="funnel-number">06</div>
-            <strong>GROW</strong>
-            <span>SEO / Ads / Reviews</span>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- SERVICES -->
-
-    <section id="services">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <div class="label">
-            What We Do
-          </div>
-
-          <h2>
-            Digital Visibility Services
-          </h2>
-
-          <p>
-            Practical digital solutions designed around discovery,
-            trust, enquiries and business growth.
-          </p>
-
-        </div>
-
-
-        <div class="services">
-
-
-          <!-- SERVICE 1 -->
-
-          <div class="service-card">
-
-            <div class="service-icon">
-              📍
-            </div>
-
-            <h3>
-              Google Business Profile
-            </h3>
-
-            <p>
-              Build a stronger and more useful presence on
-              Google Search and Google Maps.
-            </p>
-
-            <ul>
-              <li>Profile optimization</li>
-              <li>Categories & services</li>
-              <li>Products & updates</li>
-              <li>Business information</li>
-              <li>Review strategy</li>
-              <li>Performance insights</li>
-            </ul>
-
-          </div>
-
-
-          <!-- SERVICE 2 -->
-
-          <div class="service-card">
-
-            <div class="service-icon">
-              🗺️
-            </div>
-
-            <h3>
-              Google Maps & Local SEO
-            </h3>
-
-            <p>
-              Improve your local search foundation and help
-              customers discover your business.
-            </p>
-
-            <ul>
-              <li>Local keyword research</li>
-              <li>Local landing pages</li>
-              <li>On-page SEO</li>
-              <li>Location relevance</li>
-              <li>Local content</li>
-              <li>Performance monitoring</li>
-            </ul>
-
-          </div>
-
-
-          <!-- SERVICE 3 -->
-
-          <div class="service-card">
-
-            <div class="service-icon">
-              🤖
-            </div>
-
-            <h3>
-              AI Search Readiness
-            </h3>
-
-            <p>
-              Make your business information easier for search
-              engines and AI systems to understand.
-            </p>
-
-            <ul>
-              <li>Question-based content</li>
-              <li>Entity-focused information</li>
-              <li>FAQ architecture</li>
-              <li>Structured data</li>
-              <li>Local relevance</li>
-              <li>AI-friendly content</li>
-            </ul>
-
-          </div>
-
-
-          <!-- SERVICE 4 -->
-
-          <div class="service-card">
-
-            <div class="service-icon">
-              💻
-            </div>
-
-            <h3>
-              Responsive Websites
-            </h3>
-
-            <p>
-              Websites designed for mobile users, search engines
-              and customer conversion.
-            </p>
-
-            <ul>
-              <li>Mobile-first design</li>
-              <li>SEO structure</li>
-              <li>Local landing pages</li>
-              <li>Lead-generation CTAs</li>
-              <li>WhatsApp integration</li>
-              <li>Conversion-focused content</li>
-            </ul>
-
-          </div>
-
-
-          <!-- SERVICE 5 -->
-
-          <div class="service-card">
-
-            <div class="service-icon">
-              📈
-            </div>
-
-            <h3>
-              Google Ads
-            </h3>
-
-            <p>
-              Reach customers actively searching for products
-              and services through targeted campaigns.
-            </p>
-
-            <ul>
-              <li>Search campaigns</li>
-              <li>Location targeting</li>
-              <li>Lead generation</li>
-              <li>Landing-page strategy</li>
-              <li>Keyword targeting</li>
-              <li>Performance optimization</li>
-            </ul>
-
-          </div>
-
-
-          <!-- SERVICE 6 -->
-
-          <div class="service-card">
-
-            <div class="service-icon">
-              📱
-            </div>
-
-            <h3>
-              Meta Ads
-            </h3>
-
-            <p>
-              Build targeted Facebook and Instagram campaigns
-              focused on leads, enquiries and customer growth.
-            </p>
-
-            <ul>
-              <li>Campaign strategy</li>
-              <li>Audience targeting</li>
-              <li>Lead campaigns</li>
-              <li>WhatsApp campaigns</li>
-              <li>Creative direction</li>
-              <li>Conversion optimization</li>
-            </ul>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- AI SEARCH -->
-
-    <section id="ai-search" class="light">
-
-      <div class="container">
-
-        <div class="ai-box">
-
-          <div>
-
-            <div class="label" style="color:var(--cyan);">
-              AI Search & Ask-Style Discovery
-            </div>
-
-            <h2>
-              Is Your Business Ready for the Next Search?
-            </h2>
-
-            <p>
-
-              Customers increasingly ask complete questions rather
-              than typing only a few keywords.
-
-            </p>
-
-            <br>
-
-            <p>
-
-              We help structure your website and business information
-              around useful questions, clear entities, local relevance,
-              FAQs and structured data.
-
-            </p>
-
-            <br>
-
-            <p>
-              <strong style="color:#fff;">
-                No guaranteed rankings. Better search understanding.
-              </strong>
-            </p>
-
-          </div>
-
-
-          <div class="question-list">
-
-            <div class="question">
-              "Who can help my business improve Google Maps visibility?"
-            </div>
-
-            <div class="question">
-              "What is a good Google Business Profile consultant near me?"
-            </div>
-
-            <div class="question">
-              "How can I improve my local SEO?"
-            </div>
-
-            <div class="question">
-              "How can my business become more visible in AI search?"
-            </div>
-
-            <div class="question">
-              "How can I get more customers from Google Maps?"
-            </div>
-
-            <div class="question">
-              "Who provides local SEO services in Bengaluru?"
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- ABOUT -->
-
-    <section id="about">
-
-      <div class="container two-col">
-
-        <div>
-
-          <div class="label">
-            Why SPDigitalJourney
-          </div>
-
-          <h2>
-            Human Strategy. Google Ecosystem Experience. AI-Assisted Workflows.
-          </h2>
-
-          <p style="color:var(--muted);font-size:17px;">
-
-            We combine practical business understanding with
-            digital marketing experience and AI-assisted workflows
-            to help businesses build a stronger online presence.
-
-          </p>
-
-        </div>
-
-
-        <div>
-
-          <ul class="check-list">
-
-            <li>
-              Government-registered MSME digital consultancy
-            </li>
-
-            <li>
-              Google ecosystem and local-search experience
-            </li>
-
-            <li>
-              Hyper-local visibility strategy
-            </li>
-
-            <li>
-              Human + AI workflow approach
-            </li>
-
-            <li>
-              Mobile-first digital experiences
-            </li>
-
-            <li>
-              Practical lead-generation focus
-            </li>
-
-            <li>
-              Support for businesses across India
-            </li>
-
-          </ul>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- AUDIENCE -->
-
-    <section class="light">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <div class="label">
-            Who We Help
-          </div>
-
-          <h2>
-            Built for Businesses That Need to Be Found
-          </h2>
-
-        </div>
-
-
-        <div class="audience">
-
-          <div class="audience-item">
-            <strong>Local Shops</strong>
-            <span>Improve local discovery and customer enquiries.</span>
-          </div>
-
-          <div class="audience-item">
-            <strong>Restaurants & Cafés</strong>
-            <span>Connect local searches with visits and enquiries.</span>
-          </div>
-
-          <div class="audience-item">
-            <strong>Clinics & Professionals</strong>
-            <span>Build a trustworthy local digital presence.</span>
-          </div>
-
-          <div class="audience-item">
-            <strong>Hotels & Hospitality</strong>
-            <span>Improve online discovery and customer journeys.</span>
-          </div>
-
-          <div class="audience-item">
-            <strong>Educational Institutes</strong>
-            <span>Reach students, parents and local audiences.</span>
-          </div>
-
-          <div class="audience-item">
-            <strong>Service Businesses</strong>
-            <span>Connect local searches with your services.</span>
-          </div>
-
-          <div class="audience-item">
-            <strong>Startups</strong>
-            <span>Build a professional online presence.</span>
-          </div>
-
-          <div class="audience-item">
-            <strong>Small Businesses</strong>
-            <span>Create practical digital visibility foundations.</span>
-          </div>
-
-          <div class="audience-item">
-            <strong>Growing Brands</strong>
-            <span>Connect SEO, websites and advertising.</span>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- LOCAL SEO -->
-
-    <section id="local-seo">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <div class="label">
-            Local Search
-          </div>
-
-          <h2>
-            Bengaluru Local SEO & Digital Marketing
-          </h2>
-
-          <p>
-
-            Based in Achit Nagar, Bengaluru, SPDigitalJourney
-            supports local businesses and brands across India.
-
-          </p>
-
-        </div>
-
-
-        <div class="keyword-cloud">
-
-          <div class="keyword">
-            Google Business Profile consultant Bengaluru
-          </div>
-
-          <div class="keyword">
-            Google Maps marketing Bengaluru
-          </div>
-
-          <div class="keyword">
-            Local SEO consultant Bengaluru
-          </div>
-
-          <div class="keyword">
-            Digital marketing consultant Bengaluru
-          </div>
-
-          <div class="keyword">
-            Google Business Profile optimization
-          </div>
-
-          <div class="keyword">
-            Google Maps visibility
-          </div>
-
-          <div class="keyword">
-            AI search optimization
-          </div>
-
-          <div class="keyword">
-            Local SEO near me
-          </div>
-
-          <div class="keyword">
-            Google Ads consultant Bengaluru
-          </div>
-
-          <div class="keyword">
-            Meta Ads consultant Bengaluru
-          </div>
-
-          <div class="keyword">
-            Website design Bengaluru
-          </div>
-
-          <div class="keyword">
-            Google Maps marketing
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- INDIA -->
-
-    <section class="light">
-
-      <div class="container two-col">
-
-        <div>
-
-          <div class="label">
-            Beyond Bengaluru
-          </div>
-
-          <h2>
-            Supporting Businesses Across India
-          </h2>
-
-          <p style="color:var(--muted);font-size:17px;">
-
-            Although based in Bengaluru, SPDigitalJourney supports
-            businesses across India through online consultations,
-            digital strategy, website projects and local search support.
-
-          </p>
-
-        </div>
-
-
-        <div class="highlight">
-
-          <strong>
-            Bengaluru → Karnataka → South India → India
-          </strong>
-
-          <p>
-            Digital support can be delivered remotely, making it
-            possible to work with businesses in different cities
-            and states.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- LOCATION -->
-
-    <section>
-
-      <div class="container">
-
-        <div class="location-card">
-
-          <div class="label" style="color:var(--cyan);">
-            Our Location
-          </div>
-
-          <h2>
-            SPDigitalJourney — Bengaluru
-          </h2>
-
-          <p>
-            Government-registered MSME digital consultancy.
-          </p>
-
-          <div class="location-address">
-
-            📍 Achit Nagar, Bengaluru,<br>
-            Soladevanahalli, Karnataka 560107, India
-
-            <br><br>
-
-            📞
-            <a href="tel:+917799423794">
-              <strong>7799423794</strong>
-            </a>
-
-          </div>
-
-          <div class="hero-buttons">
-
-            <a class="btn btn-primary"
-               href="tel:+917799423794">
-              📞 CALL NOW
-            </a>
-
-            <a class="btn btn-outline"
-               href="https://wa.me/917799423794?text=Hi%20SPDigitalJourney%2C%20I%20would%20like%20to%20book%20a%20digital%20visibility%20demo."
-               target="_blank"
-               rel="noopener">
-              💬 WHATSAPP
-            </a>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- FAQ -->
-
-    <section id="faq" class="light">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <div class="label">
-            Frequently Asked Questions
-          </div>
-
-          <h2>
-            Answers Before You Get Started
-          </h2>
-
-        </div>
-
-
-        <div class="faq">
-
-
-          <details>
-            <summary>
-              What does SPDigitalJourney do?
-            </summary>
-
-            <p>
-              SPDigitalJourney is a government-registered MSME
-              digital consultancy specializing in Google Business
-              Profile optimization, Google Maps visibility, local
-              SEO, AI search readiness, responsive websites,
-              Google Ads and Meta Ads.
-            </p>
-
-          </details>
-
-
-          <details>
-            <summary>
-              Can SPDigitalJourney improve my Google Maps visibility?
-            </summary>
-
-            <p>
-              SPDigitalJourney provides Google Business Profile
-              and local SEO strategies designed to improve business
-              information, relevance and visibility for appropriate
-              local searches. No legitimate consultant can guarantee
-              a specific Google Maps ranking.
-            </p>
-
-          </details>
-
-
-          <details>
-            <summary>
-              What is Google Business Profile optimization?
-            </summary>
-
-            <p>
-              It involves improving and maintaining relevant business
-              information on Google Search and Google Maps, including
-              categories, services, products, business information,
-              posts and review guidance.
-            </p>
-
-          </details>
-
-
-          <details>
-            <summary>
-              What is local SEO?
-            </summary>
-
-            <p>
-              Local SEO is the process of improving a business's
-              visibility when customers search for relevant products
-              or services in a specific geographic area.
-            </p>
-
-          </details>
-
-
-          <details>
-            <summary>
-              Can you guarantee AI search rankings?
-            </summary>
-
-            <p>
-              No agency can guarantee placement in AI search results.
-              SPDigitalJourney focuses on useful, structured and
-              locally relevant content that makes business information
-              easier for search engines and AI systems to understand.
-            </p>
-
-          </details>
-
-
-          <details>
-            <summary>
-              Do you build responsive websites?
-            </summary>
-
-            <p>
-              Yes. SPDigitalJourney creates responsive websites
-              designed around mobile users, search visibility,
-              local SEO, AI search readiness and lead generation.
-            </p>
-
-          </details>
-
-
-          <details>
-            <summary>
-              Do you provide Google Ads management?
-            </summary>
-
-            <p>
-              Yes. We can help businesses plan, launch and optimize
-              Google advertising campaigns according to their goals
-              and target locations.
-            </p>
-
-          </details>
-
-
-          <details>
-            <summary>
-              Do you provide Meta Ads?
-            </summary>
-
-            <p>
-              Yes. We provide strategy and campaign support for
-              Facebook and Instagram advertising, including
-              lead-generation and WhatsApp-focused campaigns.
-            </p>
-
-          </details>
-
-
-          <details>
-            <summary>
-              Where does SPDigitalJourney operate?
-            </summary>
-
-            <p>
-              SPDigitalJourney is based in Bengaluru, Karnataka
-              and supports businesses across India through online
-              consultations, digital strategy, websites, Google
-              Business Profile support and local SEO.
-            </p>
-
-          </details>
-
-
-          <details>
-            <summary>
-              How can I contact SPDigitalJourney?
-            </summary>
-
-            <p>
-              Call or WhatsApp
-              <a href="tel:+917799423794">
-                <strong>7799423794</strong>
-              </a>
-              to discuss your business and book a demo.
-            </p>
-
-          </details>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- DEMO CTA -->
-
-    <section id="demo" class="final-cta">
-
-      <div class="container">
-
-        <div class="label" style="color:var(--cyan);">
-          Start With a Conversation
-        </div>
-
-        <h2>
-          Let's Find Out Where Your Business Can Grow Online.
-        </h2>
-
-        <p>
-
-          Tell us about your business, your location,
-          your current online presence and what you want to improve.
-
-          We'll help identify opportunities across Google Maps,
-          local SEO, websites, AI search and digital advertising.
-
+      <div class="ai-panel">
+        <h3>We work on the signals behind discovery.</h3>
+
+        <p style="margin-top:15px;">
+          Business information, service relevance, local context,
+          website content, reviews, customer journeys and conversion paths
+          all contribute to a stronger digital presence.
         </p>
 
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#lead">
+            Check My AI Visibility
+          </a>
 
-        <div class="final-buttons">
-
-          <a class="btn btn-primary"
-             href="https://wa.me/917799423794?text=Hi%20SPDigitalJourney%2C%20I%20would%20like%20to%20book%20a%20digital%20visibility%20demo.%20My%20business%20is%20%3A"
+          <a class="btn btn-green"
+             href="https://wa.me/917799423794?text=Hi%20SPDigitalJourney%2C%20I%20want%20to%20understand%20AI%20Search%20%26%20Google%20Maps%20readiness%20for%20my%20business."
              target="_blank"
              rel="noopener">
-            🚀 BOOK A DEMO
+            Ask on WhatsApp
           </a>
-
-          <a class="btn btn-light"
-             href="tel:+917799423794">
-            📞 7799423794
-          </a>
-
         </div>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <!-- FOOTER -->
-
-  <footer>
-
-    <div class="container">
-
-      <div class="footer-grid">
-
-
-        <div>
-
-          <div class="brand" style="margin-bottom:17px;">
-
-            <div class="brand-mark">
-              SP
-            </div>
-
-            <div class="brand-name"
-                 style="color:#fff;">
-              SP<span>DigitalJourney</span>
-            </div>
-
-          </div>
-
-          <p>
-
-            Government-registered MSME digital consultancy
-            specializing in hyper-local search visibility,
-            Business Profile optimization, AI search readiness,
-            responsive websites and digital advertising.
-
-          </p>
-
-          <br>
-
-          <p>
-            <strong style="color:#fff;">
-              Be Seen. Be Trusted. Be Chosen.
-            </strong>
-          </p>
-
-        </div>
-
-
-        <div>
-
-          <h3>
-            Services
-          </h3>
-
-          <ul>
-
-            <li>Google Business Profile</li>
-            <li>Google Maps & Local SEO</li>
-            <li>AI Search Readiness</li>
-            <li>Responsive Websites</li>
-            <li>Google Ads</li>
-            <li>Meta Ads</li>
-
-          </ul>
-
-        </div>
-
-
-        <div>
-
-          <h3>
-            Contact
-          </h3>
-
-          <ul>
-
-            <li>
-              📍 Bengaluru, Karnataka
-            </li>
-
-            <li>
-              📞
-              <a href="tel:+917799423794">
-                7799423794
-              </a>
-            </li>
-
-            <li>
-              💬
-              <a href="https://wa.me/917799423794"
-                 target="_blank"
-                 rel="noopener">
-                WhatsApp
-              </a>
-            </li>
-
-            <li>
-              ⭐
-              <a href="https://g.page/r/CdRrLmhaPARzEBM/review"
-                 target="_blank"
-                 rel="noopener">
-                Google Reviews
-              </a>
-            </li>
-
-          </ul>
-
-        </div>
-
-
-      </div>
-
-
-      <div class="footer-bottom">
-
-        © <span id="year"></span> SPDigitalJourney.
-        All rights reserved.
-
-        <br><br>
-
-        Government-Registered MSME Digital Consultancy ·
-        Achit Nagar, Bengaluru, Soladevanahalli,
-        Karnataka 560107, India.
-
       </div>
 
     </div>
 
-  </footer>
+  </div>
+</section>
 
+<!-- TRUST -->
+<section id="trust">
+  <div class="container">
 
-  <!-- MOBILE STICKY CTA -->
+    <div class="section-head">
+      <div class="small-label">Why SPDigitalJourney</div>
+      <h2>Experience Meets Modern AI.</h2>
+      <p>
+        A practical approach combining Google ecosystem experience,
+        digital marketing fundamentals and modern AI-assisted workflows.
+      </p>
+    </div>
 
-  <div class="mobile-cta">
+    <div class="trust-grid">
 
-    <a class="mobile-call"
-       href="tel:+917799423794">
-      📞 CALL
-    </a>
+      <div class="trust-card">
+        <h3>15+ Years Experience</h3>
+        <p>
+          Long-term experience working around Google Maps,
+          business listings, digital visibility and customer discovery.
+        </p>
+      </div>
 
-    <a class="mobile-whatsapp"
-       href="https://wa.me/917799423794?text=Hi%20SPDigitalJourney%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
-       target="_blank"
-       rel="noopener">
-      💬 WHATSAPP
-    </a>
+      <div class="trust-card">
+        <h3>Human + AI Workflow</h3>
+        <p>
+          AI helps accelerate research, content and analysis,
+          while human review keeps the strategy relevant to your business.
+        </p>
+      </div>
 
-    <a class="mobile-demo"
-       href="#demo">
-      🚀 DEMO
-    </a>
+      <div class="trust-card">
+        <h3>Business-First Thinking</h3>
+        <p>
+          The goal is not simply traffic. The goal is useful visibility,
+          customer trust and meaningful enquiries.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- KEYWORDS -->
+<section>
+  <div class="container">
+
+    <div class="section-head">
+      <div class="small-label">Digital Visibility</div>
+      <h2>Built Around How Customers Search.</h2>
+      <p>
+        We focus on natural, useful content instead of keyword stuffing.
+      </p>
+    </div>
+
+    <div class="keyword-box">
+      <span class="keyword">Google Business Profile</span>
+      <span class="keyword">Google Maps</span>
+      <span class="keyword">Local SEO</span>
+      <span class="keyword">AI Search</span>
+      <span class="keyword">Ask Maps</span>
+      <span class="keyword">Bengaluru Local SEO</span>
+      <span class="keyword">Google Ads</span>
+      <span class="keyword">Meta Ads</span>
+      <span class="keyword">Responsive Website</span>
+      <span class="keyword">Business Visibility</span>
+      <span class="keyword">Customer Enquiries</span>
+      <span class="keyword">WhatsApp Leads</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- REVIEW + SHARE -->
+<section class="review-section">
+  <div class="container">
+
+    <div class="section-head">
+      <div class="small-label">Trust Matters</div>
+      <h2>Have Experience With Us?</h2>
+      <p>
+        Your feedback helps other business owners understand our work
+        and helps us continue improving.
+      </p>
+    </div>
+
+    <div class="review-box">
+
+      <div class="review-card">
+        <div style="font-size:38px;">⭐</div>
+        <h3>Review SPDigitalJourney on Google</h3>
+        <p>
+          Share your experience with our digital marketing,
+          Google Maps or business visibility support.
+        </p>
+
+        <a class="btn btn-primary"
+           href="https://g.page/r/CdRrLmhaPARzEBM/review"
+           target="_blank"
+           rel="noopener">
+          ⭐ Review Us on Google
+        </a>
+      </div>
+
+      <div class="review-card">
+        <div style="font-size:38px;">🔗</div>
+        <h3>Share SPDigitalJourney</h3>
+        <p>
+          Know a business owner who needs help with Google Maps,
+          Local SEO, AI search or digital marketing?
+        </p>
+
+        <a class="btn btn-dark"
+           href="https://share.google/oBAaB4sOCriximoZd"
+           target="_blank"
+           rel="noopener">
+          ↗ Share SPDigitalJourney
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- LEAD FUNNEL -->
+<section class="lead-section" id="lead">
+  <div class="container lead-grid">
+
+    <div class="lead-copy">
+
+      <div class="small-label">Free Initial Consultation</div>
+
+      <h2>Let's Find Your Biggest Digital Opportunity.</h2>
+
+      <p style="margin-top:18px;">
+        Tell us a little about your business. We'll help identify
+        where your Google Maps, Local SEO, website, AI search or
+        advertising presence can be improved.
+      </p>
+
+      <ul>
+        <li>Google Business Profile review</li>
+        <li>Google Maps visibility discussion</li>
+        <li>Local SEO opportunities</li>
+        <li>AI search readiness</li>
+        <li>Website & conversion review</li>
+        <li>Google / Meta Ads discussion</li>
+      </ul>
+
+    </div>
+
+    <div class="lead-form">
+
+      <h3>Start Your Enquiry</h3>
+      <p style="font-size:13px;margin:7px 0 22px;">
+        Submit the details below and continue directly on WhatsApp.
+      </p>
+
+      <form id="leadForm">
+
+        <div class="form-row">
+
+          <div class="field">
+            <label>Your Name *</label>
+            <input id="leadName" type="text" placeholder="Your name" required>
+          </div>
+
+          <div class="field">
+            <label>Business Name *</label>
+            <input id="businessName" type="text" placeholder="Business name" required>
+          </div>
+
+        </div>
+
+        <div class="form-row">
+
+          <div class="field">
+            <label>City</label>
+            <input id="city" type="text" placeholder="e.g. Bengaluru">
+          </div>
+
+          <div class="field">
+            <label>What do you need?</label>
+
+            <select id="serviceInterest">
+              <option>Google Business Profile</option>
+              <option>Google Maps & Local SEO</option>
+              <option>AI Search Readiness</option>
+              <option>Website Design</option>
+              <option>Google Ads</option>
+              <option>Meta Ads</option>
+              <option>Complete Digital Visibility</option>
+            </select>
+
+          </div>
+
+        </div>
+
+        <div class="field">
+          <label>Tell us briefly about your requirement</label>
+          <textarea id="requirement"
+                    placeholder="Example: I want more enquiries from Google Maps..."></textarea>
+        </div>
+
+        <button class="btn btn-green" style="width:100%;" type="submit">
+          💬 Continue on WhatsApp
+        </button>
+
+        <p class="form-note">
+          Your enquiry opens directly in WhatsApp with the information
+          you entered. No separate account or website login is required.
+        </p>
+
+      </form>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+
+    <div class="section-head">
+      <div class="small-label">Frequently Asked Questions</div>
+      <h2>Simple Answers.</h2>
+    </div>
+
+    <div class="faq">
+
+      <details>
+        <summary>Can you guarantee a #1 Google Maps ranking?</summary>
+        <p>
+          No. No legitimate consultant can guarantee a specific Google
+          ranking because Google's systems continuously evaluate many
+          signals. We focus on improving the quality and relevance of
+          your digital presence.
+        </p>
+      </details>
+
+      <details>
+        <summary>Do you work with businesses outside Bengaluru?</summary>
+        <p>
+          Yes. SPDigitalJourney supports businesses across India,
+          with Bengaluru as the base location.
+        </p>
+      </details>
+
+      <details>
+        <summary>Can you help with an existing Google Business Profile?</summary>
+        <p>
+          Yes. Existing profiles can be reviewed for business information,
+          categories, services, content, reviews, local relevance and
+          customer conversion opportunities.
+        </p>
+      </details>
+
+      <details>
+        <summary>What is AI Search Readiness?</summary>
+        <p>
+          It means structuring your business information and digital
+          content so that it is clearer and more useful for modern
+          question-based and AI-assisted discovery.
+        </p>
+      </details>
+
+      <details>
+        <summary>How do I start?</summary>
+        <p>
+          Use the enquiry form above or message SPDigitalJourney directly
+          on WhatsApp. The AI assistant on this website can also help
+          identify the right starting point.
+        </p>
+      </details>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+
+  <div class="container">
+
+    <div class="small-label">Ready When You Are</div>
+
+    <h2>Make Your Business Easier to Find.</h2>
+
+    <p>
+      Google Maps. Local SEO. AI Search. Websites. Ads.
+      One connected digital journey.
+    </p>
+
+    <div class="hero-buttons" style="justify-content:center;">
+
+      <a class="btn btn-primary" href="#lead">
+        🚀 Get My Visibility Check
+      </a>
+
+      <a class="btn btn-green"
+         href="https://wa.me/917799423794?text=Hi%20Sanjay%2C%20I%20found%20SPDigitalJourney%20online%20and%20would%20like%20to%20discuss%20my%20business."
+         target="_blank"
+         rel="noopener">
+        💬 Chat on WhatsApp
+      </a>
+
+      <a class="btn btn-dark"
+         href="https://g.page/r/CdRrLmhaPARzEBM/review"
+         target="_blank"
+         rel="noopener">
+        ⭐ Leave a Google Review
+      </a>
+
+    </div>
 
   </div>
 
+</section>
 
-  <script>
+<!-- FOOTER -->
+<footer>
 
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
+  <div class="container">
 
-  </script>
+    <div class="footer-grid">
 
+      <div>
+        <div class="logo">
+          <span class="logo-mark">SP</span>
+          <span>SPDigitalJourney</span>
+        </div>
+
+        <p style="margin-top:15px;">
+          Digital Marketer & Google Ecosystem Specialist.
+          Helping businesses build stronger visibility across
+          Google, Maps, Search, AI and digital channels.
+        </p>
+
+        <p style="margin-top:15px;">
+          <strong>Be Seen. Be Trusted. Be Chosen.</strong>
+        </p>
+      </div>
+
+      <div>
+        <h3>Services</h3>
+
+        <ul>
+          <li>Google Business Profile</li>
+          <li>Google Maps & Local SEO</li>
+          <li>AI Search Readiness</li>
+          <li>Responsive Websites</li>
+          <li>Google Ads</li>
+          <li>Meta Ads</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+
+        <ul>
+          <li>Achit Nagar, Bengaluru</li>
+          <li>Karnataka 560107</li>
+
+          <li>
+            <a href="tel:+917799423794">
+              📞 7799423794
+            </a>
+          </li>
+
+          <li>
+            <a href="https://wa.me/917799423794"
+               target="_blank"
+               rel="noopener">
+              💬 WhatsApp
+            </a>
+          </li>
+
+          <li>
+            <a href="https://g.page/r/CdRrLmhaPARzEBM/review"
+               target="_blank"
+               rel="noopener">
+              ⭐ Review Us on Google
+            </a>
+          </li>
+
+          <li>
+            <a href="https://share.google/oBAaB4sOCriximoZd"
+               target="_blank"
+               rel="noopener">
+              ↗ Share SPDigitalJourney
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © <span id="year"></span> SPDigitalJourney.
+      Govt. Registered MSME · UDYAM-KR-02-0117946.
+      All rights reserved.
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a class="whatsapp-float"
+   href="https://wa.me/917799423794?text=Hi%20SPDigitalJourney%2C%20I%20would%20like%20help%20with%20my%20business%20visibility."
+   target="_blank"
+   rel="noopener"
+   aria-label="Chat with SPDigitalJourney on WhatsApp">
+  <span>💬 WhatsApp</span>
+</a>
+
+<!-- AI BOT BUTTON -->
+<button class="bot-button"
+        id="botButton"
+        aria-label="Open SPDigitalJourney AI Assistant">
+  ✨
+</button>
+
+<!-- AI BOT -->
+<div class="bot-window" id="botWindow">
+
+  <div class="bot-header">
+
+    <div>
+      <strong>SPDigitalJourney AI Assistant</strong>
+      <small>Digital Visibility Guide</small>
+    </div>
+
+    <button class="bot-close" id="botClose">×</button>
+
+  </div>
+
+  <div class="bot-messages" id="botMessages">
+
+    <div class="bot-message ai">
+      Hi! 👋 I'm the SPDigitalJourney AI Assistant.
+      I can help you understand where to start with Google Maps,
+      Local SEO, AI Search, websites or advertising.
+      <br><br>
+      What are you looking to improve?
+    </div>
+
+  </div>
+
+  <div class="bot-options" id="botOptions">
+
+    <button class="bot-option" data-bot="maps">
+      📍 Google Maps
+    </button>
+
+    <button class="bot-option" data-bot="seo">
+      🔎 Local SEO
+    </button>
+
+    <button class="bot-option" data-bot="ai">
+      🤖 AI Search
+    </button>
+
+    <button class="bot-option" data-bot="website">
+      💻 Website
+    </button>
+
+    <button class="bot-option" data-bot="ads">
+      🎯 Ads
+    </button>
+
+    <button class="bot-option" data-bot="complete">
+      🚀 Complete Growth
+    </button>
+
+  </div>
+
+  <div class="bot-input">
+
+    <input id="botInput"
+           type="text"
+           placeholder="Ask something...">
+
+    <button class="bot-send" id="botSend">
+      ➤
+    </button>
+
+  </div>
+
+</div>
+
+<!-- MOBILE CTA -->
+<div class="mobile-bar">
+
+  <a href="tel:+917799423794">
+    📞 Call
+  </a>
+
+  <a href="https://wa.me/917799423794?text=Hi%20SPDigitalJourney%2C%20I%20would%20like%20to%20discuss%20my%20business."
+     target="_blank"
+     rel="noopener">
+    💬 WhatsApp
+  </a>
+
+  <a href="#lead">
+    🚀 Get Started
+  </a>
+
+</div>
+
+<!-- STRUCTURED DATA -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ProfessionalService",
+  "name":"SPDigitalJourney",
+  "url":"https://spdigitaljourney.github.io/",
+  "telephone":"+917799423794",
+  "description":"Digital marketing consultancy specialising in Google Business Profile, Google Maps visibility, Local SEO, AI Search readiness, responsive websites, Google Ads and Meta Ads.",
+  "areaServed":{
+    "@type":"Country",
+    "name":"India"
+  },
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"Achit Nagar",
+    "addressLocality":"Bengaluru",
+    "addressRegion":"Karnataka",
+    "postalCode":"560107",
+    "addressCountry":"IN"
+  },
+  "serviceType":[
+    "Google Business Profile",
+    "Google Maps Local SEO",
+    "AI Search Readiness",
+    "Website Design",
+    "Google Ads",
+    "Meta Ads"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"Can you guarantee a #1 Google Maps ranking?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"No. No legitimate consultant can guarantee a specific Google ranking. SPDigitalJourney focuses on improving the quality and relevance of a business's digital presence."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"Do you work with businesses outside Bengaluru?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Yes. SPDigitalJourney supports businesses across India."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"Can you help with an existing Google Business Profile?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Yes. Existing Google Business Profiles can be reviewed for business information, categories, services, content, reviews, local relevance and customer conversion opportunities."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+/* YEAR */
+document.getElementById("year").textContent = new Date().getFullYear();
+
+/* SERVICE BUTTONS -> LEAD FORM */
+document.querySelectorAll("[data-interest]").forEach(function(btn){
+  btn.addEventListener("click",function(){
+    const interest = this.getAttribute("data-interest");
+    const select = document.getElementById("serviceInterest");
+
+    if(select){
+      for(let i=0;i<select.options.length;i++){
+        if(select.options[i].text === interest){
+          select.selectedIndex = i;
+          break;
+        }
+      }
+    }
+  });
+});
+
+/* WHATSAPP LEAD FORM */
+document.getElementById("leadForm").addEventListener("submit",function(e){
+
+  e.preventDefault();
+
+  const name = document.getElementById("leadName").value.trim();
+  const business = document.getElementById("businessName").value.trim();
+  const city = document.getElementById("city").value.trim();
+  const service = document.getElementById("serviceInterest").value;
+  const requirement = document.getElementById("requirement").value.trim();
+
+  const message =
+`Hi SPDigitalJourney,
+
+I'd like to discuss my business visibility.
+
+Name: ${name}
+Business: ${business}
+City: ${city || "Not specified"}
+Requirement: ${service}
+Details: ${requirement || "I would like an initial consultation."}
+
+Please let me know the next step.`;
+
+  const whatsappURL =
+    "https://wa.me/917799423794?text=" +
+    encodeURIComponent(message);
+
+  window.open(whatsappURL,"_blank");
+});
+
+/* AI ASSISTANT */
+const botButton = document.getElementById("botButton");
+const botWindow = document.getElementById("botWindow");
+const botClose = document.getElementById("botClose");
+const botMessages = document.getElementById("botMessages");
+const botOptions = document.getElementById("botOptions");
+const botInput = document.getElementById("botInput");
+const botSend = document.getElementById("botSend");
+
+let botTopic = "";
+
+botButton.addEventListener("click",function(){
+  botWindow.classList.toggle("open");
+});
+
+botClose.addEventListener("click",function(){
+  botWindow.classList.remove("open");
+});
+
+function addBotMessage(text,type){
+
+  const div = document.createElement("div");
+
+  div.className = "bot-message " + type;
+
+  div.textContent = text;
+
+  botMessages.appendChild(div);
+
+  botMessages.scrollTop = botMessages.scrollHeight;
+}
+
+function botReply(topic){
+
+  const replies = {
+
+    maps:
+      "For Google Maps, we can review your Google Business Profile, business information, categories, services, content, reviews and local visibility signals. I can help you start with a visibility check.",
+
+    seo:
+      "For Local SEO, we look at how your business is represented across Google Search, Maps, your website and relevant local signals. The aim is to make your business clearer and more relevant to local customers.",
+
+    ai:
+      "AI Search readiness means making your business information easier for modern question-based and AI-assisted discovery. We focus on clear services, locations, business information, useful content and connected digital signals.",
+
+    website:
+      "A good business website should do more than look attractive. It should explain what you offer, build trust, support search visibility and make it easy for customers to call or message you.",
+
+    ads:
+      "Google Ads and Meta Ads can be used to generate targeted visibility and enquiries. The right platform depends on your business, audience, location and customer journey.",
+
+    complete:
+      "A complete growth strategy can connect Google Business Profile, Google Maps, Local SEO, AI Search readiness, your website and paid advertising into one customer journey."
+
+  };
+
+  return replies[topic] ||
+    "I can help you explore Google Maps, Local SEO, AI Search, websites and advertising. Tell me what you want to improve.";
+}
+
+function showLeadOption(){
+
+  botOptions.innerHTML = "";
+
+  const button = document.createElement("button");
+
+  button.className = "bot-option";
+
+  button.textContent = "💬 Continue on WhatsApp";
+
+  button.onclick = function(){
+
+    const message =
+      `Hi SPDigitalJourney,
+
+I spoke with the website AI Assistant.
+
+I'm interested in: ${botTopic || "Digital visibility"}
+
+Please help me understand the best next step for my business.`;
+
+    window.open(
+      "https://wa.me/917799423794?text=" +
+      encodeURIComponent(message),
+      "_blank"
+    );
+
+  };
+
+  botOptions.appendChild(button);
+
+  const restart = document.createElement("button");
+
+  restart.className = "bot-option";
+
+  restart.textContent = "↻ Start Again";
+
+  restart.onclick = function(){
+    location.reload();
+  };
+
+  botOptions.appendChild(restart);
+}
+
+document.querySelectorAll(".bot-option").forEach(function(button){
+
+  button.addEventListener("click",function(){
+
+    botTopic = this.getAttribute("data-bot");
+
+    const label = this.textContent.trim();
+
+    addBotMessage(label,"user");
+
+    setTimeout(function(){
+
+      addBotMessage(botReply(botTopic),"ai");
+
+      setTimeout(function(){
+
+        addBotMessage(
+          "Would you like me to connect you with SPDigitalJourney on WhatsApp so you can discuss your business?",
+          "ai"
+        );
+
+        showLeadOption();
+
+      },500);
+
+    },350);
+
+  });
+
+});
+
+function handleBotInput(){
+
+  const text = botInput.value.trim();
+
+  if(!text) return;
+
+  addBotMessage(text,"user");
+
+  botInput.value = "";
+
+  setTimeout(function(){
+
+    let response =
+      "Based on your question, I recommend starting with a business visibility review. I can help you connect with SPDigitalJourney on WhatsApp for a more specific assessment.";
+
+    const lower = text.toLowerCase();
+
+    if(lower.includes("map") || lower.includes("google business")){
+      botTopic = "Google Maps / Google Business Profile";
+      response = botReply("maps");
+    }
+    else if(lower.includes("seo") || lower.includes("ranking")){
+      botTopic = "Local SEO";
+      response = botReply("seo");
+    }
+    else if(lower.includes("ai") || lower.includes("chatgpt")){
+      botTopic = "AI Search Readiness";
+      response = botReply("ai");
+    }
+    else if(lower.includes("website")){
+      botTopic = "Website Design";
+      response = botReply("website");
+    }
+    else if(lower.includes("ads") || lower.includes("advert")){
+      botTopic = "Digital Advertising";
+      response = botReply("ads");
+    }
+
+    addBotMessage(response,"ai");
+
+    setTimeout(function(){
+
+      addBotMessage(
+        "I can now connect you with SPDigitalJourney on WhatsApp.",
+        "ai"
+      );
+
+      showLeadOption();
+
+    },500);
+
+  },350);
+}
+
+botSend.addEventListener("click",handleBotInput);
+
+botInput.addEventListener("keydown",function(e){
+
+  if(e.key === "Enter"){
+    handleBotInput();
+  }
+
+});
+</script>
 
 </body>
 </html>
+```
